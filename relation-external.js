@@ -37,4 +37,6 @@ RelationSelect.propTypes = {
 	]),
 	error: PropTypes.any,
 	labelKey: PropTypes.string,
-}
+};
+
+export default RelationSelect;
