@@ -1,6 +1,6 @@
 import { createElement, PropTypes, PureComponent } from 'react';
 /** @jsx createElement */
-import RelationSelectBase from './main.js';
+import RelationSelectBase from './relation-external.js';
 
 /**
  * Fetches the given URL and uses the returned JSON to add options to the select
