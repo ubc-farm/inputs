@@ -11,13 +11,14 @@ const RelationSelect = ({ input, loading, data, error, labelKey = 'name' }) => {
 	else if (error) firstOptionText = error;
 
 	const options = [];
+	if (typeof data === 'object') {
+		const entryInterator = typeof data.entries === 'function'
+			? data.entries()
+			: entries(data);
 
-	const entryInterator = typeof data.entries === 'function'
-		? data.entries()
-		: entries(data);
-
-	for (const [key, { [labelKey]: label }] of entryInterator) {
-		options.push(<option value={key} key={key}>{label}</option>);
+		for (const [key, { [labelKey]: label }] of entryInterator) {
+			options.push(<option value={key} key={key}>{label}</option>);
+		}
 	}
 
 	return (
