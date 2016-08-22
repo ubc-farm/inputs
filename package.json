@@ -1,0 +1,11 @@
+{
+	"name": "ubc-farm-inputs",
+	"version": "1.0.0",
+	"description": "",
+	"author": "Tiger Oakes <tigeroakes@gmail.com> (http://tigeroakes.com)",
+  "license": "MIT",
+	"repository": "https://github.com/NotWoods/ubc-farm/inputs",
+	"dependecies": {
+		"react": "15.3.0"
+	}
+}
